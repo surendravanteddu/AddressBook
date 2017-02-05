@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+            <div class="col-sm-12">
+            <div ><h4>Contact List</h4></div>
+            <table class="table table-hover">
+                <thead><th>Id</th><th>Name</th><th>Address</th><th>Mobile Number</th></thead>
+                <tbody>
+                    <!--<tr ng-repeat="w in weatherResult.list"><td>{{dateConvert(w.dt)}}</td><td>{{w.weather[0].description}}</td><td>{{convert(w.temp.min)}}</td><td>{{convert(w.temp.max)}}</td></tr>-->
+                    <tr ng-repeat="w in data"><td>{{w.id}}</td><td>{{w.name}}</td><td>{{w.address}}</td><td>{{w.phone}}</td></tr>
+                </tbody>    
+            </table>
+            </div>
+    </body>
+</html>
